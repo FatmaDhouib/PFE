@@ -1,0 +1,21 @@
+Kubernetes: “a container orchestration technology (Microsoft) used to orchestrate and manage the deployment of containers in a clustered environment” (kodekloud: kubernetes for the absolute beginners).
+
+–architecture:
+*node(minion): machine whether physical or virtual
+*cluster: a set of nodes
+*master: a node within kubernetes responsible of the orchistration 
+*components:
+     -API server (frontend)
+     -scheduler (distributes work)
+     -controller(in case a node goes down, notices and responds =>decision to bring up new containers)
+     -container runtime (software to run containers)
+     -kubelet (agent running on each node in the cluster)
+     -etcd(key-value store =>implementing logs within the cluster)
+
+**kubeclt: used to deploy and manage apps on a cluster
+kubectl run :deploy an app on the cluster
+kubectl cluster -info: view info about the cluster
+kubectl get nodes: list of all the nodes part of the cluster
+
+*minikube: a whole bundle image packaged to be executed
+* Pod: a kubernetes object =>a single instance of an app (the smallest object in kubernetes)

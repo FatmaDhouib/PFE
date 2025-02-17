@@ -1,0 +1,14 @@
+within the ubuntu distribution for windows subsystem:
+  sudo apt update
+  sudo apt upgrade -y
+  sudo apt install python3 python3-pip -y
+  pip3 install ansible (an error occured: error: externally-managed-environment)
+  
+  the new approach is to use a virtual environment:
+   sudo apt install python3-venv -y
+   python3 -m venv ~/venvs/ansible-env
+   source ~/venvs/ansible-env/bin/activate
+   pip install ansible
+
+to check the ansible version installed: 
+  ansible --version
